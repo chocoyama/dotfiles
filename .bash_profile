@@ -37,5 +37,3 @@ alias remove_uninked_volumes='docker volume ls -qf dangling=true | xargs docker 
 
 
 ########## utility ##########
-# 容量を食っているファイルベスト10を表示する
-alias top10_big_files='du -ma | sort -rn | head -10'
