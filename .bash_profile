@@ -15,6 +15,10 @@ alias atom='open -a /Applications/Atom.app/'
 
 
 ########### version management ##########
+# pyenv	
+eval "$(pyenv init -)"	
+eval "$(pyenv virtualenv-init -)"	
+
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
