@@ -30,11 +30,12 @@ export NVM_DIR="$HOME/.nvm"
 
 ########## docker ##########
 # 存在するコンテナ全てを削除する
-alias remove_exists_container='docker rm -f `docker ps -a -q`'
+alias rm_ext_ct='docker rm -f `docker ps -a -q`'
 # 生成に失敗したイメージを全て削除する
-alias remove_failed_images='docker rmi `docker images | awk '\''$2 == "<none>" {print $3}'\''`'
+alias rm_f_img='docker rmi `docker images | awk '\''$2 == "<none>" {print $3}'\''`'
 # リンクが切れているボリュームを全て削除する
-alias remove_uninked_volumes='docker volume ls -qf dangling=true | xargs docker volume rm'
+alias rm_ul_vol='docker volume ls -qf dangling=true | xargs docker volume rm'
 
 
 ########## utility ##########
+alias showports='sudo lsof -i -n -P'
