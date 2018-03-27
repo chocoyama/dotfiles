@@ -95,4 +95,7 @@ alias rm_ul_vol='docker volume ls -qf dangling=true | xargs docker volume rm'
 
 
 ########## utility ##########
+# ポートの情報を一覧する
 alias showports='sudo lsof -i -n -P'
+# コア数を確認する
+alias checkcore='grep processor /proc/cpuinfo | wc'
