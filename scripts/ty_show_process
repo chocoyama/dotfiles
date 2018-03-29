@@ -1,0 +1,3 @@
+#!/bin/sh
+PROCESSID=$1
+ps aux | grep $PROCESSID | grep -v grep
