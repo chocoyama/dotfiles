@@ -27,6 +27,8 @@ eval "$(rbenv init -)"
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
+# composer
+export PATH=$HOME/.composer/vendor/bin:$PATH
 
 ########## docker ##########
 # 存在するコンテナ全てを削除する
