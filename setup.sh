@@ -27,3 +27,18 @@ fi
 
 # zsh
 chsh -s `which zsh`
+
+# cocoapods
+if type pod > /dev/null 2>&1; then
+	echo "[INFO] cocoapods found."
+else
+	sudo gem install cocoapods
+	pod setup
+fi
+
+# carthage
+if type carthage > /dev/null 2>&1; then
+	echo "[INFO] carthage found."
+else
+	brew install carthage
+fi
